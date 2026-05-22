@@ -27,6 +27,10 @@ draft: false
 
 ---
 
+## 原文链接
+
+- 原文：<https://blog.20210421.xyz/wuhan-seaside-trip>
+
 ## 📅 出行时间确认
 
 | 项目 | 详情 |
