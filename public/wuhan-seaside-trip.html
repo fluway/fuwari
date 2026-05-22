@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>武汉出发 · 六月海滨五天四晚亲子游 全攻略</title>
+<style>
+    :root {
+        --primary: #0d6b7d;
+        --accent: #e8823c;
+        --bg: #fbfaf6;
+        --card-bg: #ffffff;
+        --text: #2c2c2c;
+        --light-text: #5e5e5e;
+        --border: #e0ded8;
+        --tag-blue: #e3f0f4;
+        --tag-blue-text: #0d6b7d;
+        --tag-orange: #fdf0e3;
+        --tag-orange-text: #c46a1e;
+        --tag-green: #e7f3e9;
+        --tag-green-text: #2d6a35;
+        --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        --radius: 10px;
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+    }
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px 24px 60px;
+    }
+
+    /* 头部 */
+    .hero {
+        background: linear-gradient(135deg, #0d6b7d 0%, #15919b 40%, #1baaaa 100%);
+        color: #fff;
+        border-radius: 16px;
+        padding: 40px 36px 34px;
+        margin-bottom: 28px;
+        text-align: center;
+        box-shadow: 0 6px 28px rgba(13, 107, 125, 0.22);
+    }
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        margin-bottom: 6px;
+    }
+    .hero .subtitle {
+        font-size: 1.05rem;
+        opacity: 0.9;
+        font-weight: 400;
+    }
+    .hero .meta-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 16px;
+    }
+    .hero .meta-tag {
+        background: rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        padding: 5px 16px;
+        font-size: 0.9rem;
+        backdrop-filter: blur(4px);
+    }
+
+    /* 分区标题 */
+    .section-title {
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 36px 0 16px;
+        padding-left: 14px;
+        border-left: 5px solid var(--accent);
+    }
+    .section-subtitle {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #3a3a3a;
+        margin: 24px 0 10px;
+    }
+
+    /* 卡片 */
+    .card {
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px 22px;
+        margin-bottom: 18px;
+        box-shadow: var(--shadow);
+    }
+    .card-header {
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .card-header .emoji {
+        font-size: 1.3rem;
+    }
+
+    /* 表格 */
+    .table-wrap {
+        overflow-x: auto;
+        margin: 12px 0 18px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.92rem;
+        min-width: 600px;
+    }
+    th {
+        background: #f3f6f7;
+        color: var(--primary);
+        font-weight: 700;
+        padding: 10px 12px;
+        text-align: left;
+        white-space: nowrap;
+        border-bottom: 2px solid #dce6e8;
+    }
+    td {
+        padding: 9px 12px;
+        border-bottom: 1px solid #ededed;
+        vertical-align: top;
+    }
+    tr:last-child td {
+        border-bottom: none;
+    }
+    .highlight-row {
+        background: #fefaf5;
+    }
+    .highlight-row td {
+        font-weight: 700;
+        color: var(--accent);
+    }
+
+    /* 标签 */
+    .tag {
+        display: inline-block;
+        border-radius: 14px;
+        padding: 3px 10px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        margin: 2px 4px 2px 0;
+    }
+    .tag-blue {
+        background: var(--tag-blue);
+        color: var(--tag-blue-text);
+    }
+    .tag-orange {
+        background: var(--tag-orange);
+        color: var(--tag-orange-text);
+    }
+    .tag-green {
+        background: var(--tag-green);
+        color: var(--tag-green-text);
+    }
+    .badge {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        border-radius: 12px;
+        padding: 2px 10px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        margin-left: 6px;
+    }
+
+    /* 日程 */
+    .day-block {
+        margin: 10px 0 16px;
+        padding-left: 6px;
+    }
+    .day-label {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+    .day-item {
+        display: flex;
+        gap: 10px;
+        margin: 4px 0;
+        font-size: 0.92rem;
+    }
+    .day-time {
+        color: var(--accent);
+        font-weight: 600;
+        white-space: nowrap;
+        min-width: 90px;
+    }
+    .day-desc {
+        flex: 1;
+    }
+
+    /* 对比表高亮列 */
+    .compare-table th:first-child,
+    .compare-table td:first-child {
+        font-weight: 700;
+        background: #f9fafb;
+    }
+
+    /* 清单 */
+    .checklist-cat {
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #3a3a3a;
+        margin: 16px 0 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px dashed #dcdcdc;
+    }
+    ul.checklist {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 20px;
+    }
+    ul.checklist li {
+        padding: 4px 0;
+        font-size: 0.9rem;
+    }
+    ul.checklist li::before {
+        content: "☐ ";
+        color: #bbb;
+        margin-right: 6px;
+    }
+    ul.checklist-wide {
+        grid-template-columns: 1fr;
+    }
+
+    .reminder-box {
+        background: #fef9f0;
+        border: 1px solid #f0d9a8;
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        margin: 16px 0;
+        font-size: 0.92rem;
+    }
+    .reminder-box strong {
+        color: #b85a0c;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 28px 0;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-muted {
+        color: var(--light-text);
+        font-size: 0.88rem;
+    }
+    .mt-2 {
+        margin-top: 8px;
+    }
+    .mb-2 {
+        margin-bottom: 8px;
+    }
+    .mb-4 {
+        margin-bottom: 16px;
+    }
+
+    /* 打印 */
+    @media print {
+        body {
+            background: #fff;
+            font-size: 11pt;
+        }
+        .container {
+            max-width: 100%;
+            padding: 0 12px;
+        }
+        .card {
+            box-shadow: none;
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+        table {
+            font-size: 9pt;
+        }
+        .hero {
+            background: #0d6b7d !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    }
+
+    /* 手机 */
+    @media (max-width: 640px) {
+        .hero h1 {
+            font-size: 1.4rem;
+        }
+        ul.checklist {
+            grid-template-columns: 1fr;
+        }
+        .day-item {
+            flex-direction: column;
+            gap: 2px;
+        }
+        .day-time {
+            min-width: auto;
+        }
+        table {
+            font-size: 0.78rem;
+        }
+        th,
+        td {
+            padding: 6px 8px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ========== 头部 ========== -->
+        <div class="hero">
+            <h1>🌊 武汉出发 · 六月海滨五天四晚亲子游</h1>
+            <p class="subtitle">两大一小（爸爸妈妈 + 5岁女孩）· 五大方案全对比 + 超全携带清单</p>
+            <div class="meta-row">
+                <span class="meta-tag">📅 2026年6月</span>
+                <span class="meta-tag">👨‍👩‍👧 2大1小</span>
+                <span class="meta-tag">🚄 武汉高铁出发</span>
+                <span class="meta-tag">⏱ 5天4晚</span>
+            </div>
+        </div>
+
+        <!-- ========== 出行时间 ========== -->
+        <h2 class="section-title">📅 出行时间确认</h2>
+        <div class="card">
+            <table>
+                <tr><th>项目</th><th>详情</th></tr>
+                <tr><td><strong>2026年端午节前后</strong></td><td>排除6月19日（周五）– 6月21日（周日），共3天</td></tr>
+                <tr><td>✅ <strong>推荐窗口A</strong></td><td><strong>6月14日（周日）– 6月18日（周四）</strong></td></tr>
+                <tr><td>✅ <strong>推荐窗口B</strong></td><td><strong>6月22日（周一）– 6月26日（周五）</strong></td></tr>
+                <tr><td>🌤️ 六月天气</td><td>25-32°C，水温温暖，适合下水</td></tr>
+                <tr><td>👥 客流</td><td>端午后 + 非周末 = 全年最低谷，完美！</td></tr>
+            </table>
+        </div>
+
+        <!-- ========== 五大方案总对比 ========== -->
+        <h2 class="section-title">🏆 五大方案总对比</h2>
+        <div class="table-wrap">
+            <table class="compare-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>🥇 平潭岛</th>
+                        <th>🥈 东山岛</th>
+                        <th>🥉 双月湾</th>
+                        <th>④ 巽寮湾</th>
+                        <th>⑤ 湄洲岛</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>总费用</strong></td>
+                        <td>≈¥8,600</td>
+                        <td>≈¥7,400</td>
+                        <td>≈¥6,900</td>
+                        <td>≈¥6,935</td>
+                        <td>≈¥6,210</td>
+                    </tr>
+                    <tr>
+                        <td><strong>海水质量</strong></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>亲子友好</strong></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>核心亮点</strong></td>
+                        <td>蓝眼泪💧</td>
+                        <td>鱼骨沙洲🐟</td>
+                        <td>海龟湾🐢</td>
+                        <td>三角洲岛🏝️</td>
+                        <td>妈祖文化🙏</td>
+                    </tr>
+                    <tr>
+                        <td><strong>交通时长</strong></td>
+                        <td>约6.5h</td>
+                        <td>约7.5h</td>
+                        <td>约6h</td>
+                        <td>约6h</td>
+                        <td>约7.5h</td>
+                    </tr>
+                    <tr>
+                        <td><strong>周边县城</strong></td>
+                        <td>福州三坊七巷</td>
+                        <td>漳州古城</td>
+                        <td>平海古城</td>
+                        <td>平海古城</td>
+                        <td>莆田广化寺</td>
+                    </tr>
+                    <tr>
+                        <td><strong>美食指数</strong></td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td><strong>推荐场景</strong></td>
+                        <td>一生难忘的体验</td>
+                        <td>性价比+海鲜盛宴</td>
+                        <td>最省心带娃</td>
+                        <td>离岛浮潜探险</td>
+                        <td>文化朝圣之旅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 方案一：平潭岛 ========== -->
+        <h2 class="section-title">🥇 方案一：福州平潭岛 —— 蓝眼泪 · 风车海 · 石头厝</h2>
+        <p class="text-muted mb-4">
+            <span class="tag tag-blue">海水最佳</span> <span class="tag tag-orange">蓝眼泪可遇季</span> <span class="tag tag-green">风车公路</span> <span class="tag tag-blue">68海里</span>
+        </p>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🚄</span> 交通</div>
+            <table>
+                <tr><th>段</th><th>方式</th><th>详情</th><th>耗时</th><th>费用（两大一小）</th></tr>
+                <tr><td>武汉→福州南</td><td>高铁G字头</td><td>武汉站出发，每天10+班</td><td>约6h</td><td>¥400×2 + ¥200（儿童半价）= <strong>¥1,000</strong></td></tr>
+                <tr><td>福州南→平潭</td><td>高铁/动车</td><td>直达平潭岛（公铁大桥）</td><td>约30min</td><td>¥40×2 + ¥20 = <strong>¥100</strong></td></tr>
+                <tr><td>岛内交通</td><td><strong>租车⭐</strong></td><td>神州/一嗨，平潭站取还</td><td>4天</td><td>约¥250/天×4 = <strong>¥1,000</strong></td></tr>
+                <tr><td>返程</td><td>高铁</td><td>原路返回</td><td>约6.5h</td><td><strong>¥1,100</strong></td></tr>
+                <tr class="highlight-row"><td colspan="4"><strong>交通合计</strong></td><td><strong>≈ ¥3,200</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🏨</span> 住宿（4晚）</div>
+            <table>
+                <tr><th>晚次</th><th>推荐</th><th>特点</th><th>费用/晚</th></tr>
+                <tr><td>第1-2晚</td><td>宇诚海景国际酒店</td><td>龙凤头对面、海景房、核心位置</td><td>¥400</td></tr>
+                <tr><td>第3晚</td><td>北港村石头厝民宿</td><td>石厝渔村、蓝眼泪观测点、有亲子房</td><td>¥350</td></tr>
+                <tr><td>第4晚</td><td>坛南湾海景民宿</td><td>开门见海、沙滩一步之遥</td><td>¥400</td></tr>
+                <tr class="highlight-row"><td colspan="3"><strong>住宿合计</strong></td><td><strong>¥400×2 + 350 + 400 = ¥1,550</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🗺️</span> 5天4晚行程</div>
+
+            <div class="day-block">
+                <div class="day-label">Day 1｜6月9日（周一）抵达+初探</div>
+                <div class="day-item"><span class="day-time">07:00-13:30</span><span class="day-desc">武汉站→福州南→平潭（高铁上自带午餐）</span></div>
+                <div class="day-item"><span class="day-time">14:00</span><span class="day-desc">平潭站取车，提前App预约</span></div>
+                <div class="day-item"><span class="day-time">14:30-16:30</span><span class="day-desc"><strong>猴研岛/68海里景区</strong>——大陆距台湾最近点，孩子会爱"68海里"概念</span></div>
+                <div class="day-item"><span class="day-time">17:00-19:00</span><span class="day-desc"><strong>龙凤头海滨浴场</strong>——平潭最大沙滩，沙细水浅，安全玩水</span></div>
+                <div class="day-item"><span class="day-time">19:30</span><span class="day-desc">晚餐：县城海鲜 | 🏨 住县城</span></div>
+            </div>
+
+            <div class="day-block">
+                <div class="day-label">Day 2｜6月10日（周二）北线精华</div>
+                <div class="day-item"><span class="day-time">08:30-10:30</span><span class="day-desc"><strong>北港村</strong>——石头厝文创村、《爸爸去哪儿》取景地</span></div>
+                <div class="day-item"><span class="day-time">10:30-12:00</span><span class="day-desc"><strong>最美环岛路</strong>（北港→长江澳）——海上风车+公路，全程高能拍照</span></div>
+                <div class="day-item"><span class="day-time">12:00-13:00</span><span class="day-desc">长江澳附近午餐</span></div>
+                <div class="day-item"><span class="day-time">13:00-16:00</span><span class="day-desc"><strong>长江澳风车田赶海</strong>——退潮后捡贝壳、抓小螃蟹，孩子最爱！查好潮汐表</span></div>
+                <div class="day-item"><span class="day-time">16:30-18:00</span><span class="day-desc"><strong>北部湾生态廊道</strong>——玻璃栈道看日落，风车海全景</span></div>
+                <div class="day-item"><span class="day-time">20:00-21:00</span><span class="day-desc">🔵 <strong>守候蓝眼泪</strong>——6月仍有机会！关注"平潭蓝眼泪"公众号 | 🏨 住北港村民宿</span></div>
+            </div>
+
+            <div class="day-block">
+                <div class="day-label">Day 3｜6月11日（周三）深度南线</div>
+                <div class="day-item"><span class="day-time">08:30-12:00</span><span class="day-desc"><strong>坛南湾</strong>——平潭最美沙滩，沙白水清，玩沙戏水</span></div>
+                <div class="day-item"><span class="day-time">12:00-13:30</span><span class="day-desc">坛南湾海鲜午餐</span></div>
+                <div class="day-item"><span class="day-time">14:00-16:00</span><span class="day-desc"><strong>东海仙境/仙人井</strong>——海蚀奇观，天然海蚀竖井，涨潮时浪花冲天</span></div>
+                <div class="day-item"><span class="day-time">16:30-18:00</span><span class="day-desc"><strong>大福湾</strong>——白色廊桥+海景日落</span></div>
+                <div class="day-item"><span class="day-time">19:00</span><span class="day-desc">晚餐+再追蓝眼泪 | 🏨 住坛南湾民宿</span></div>
+            </div>
+
+            <div class="day-block">
+                <div class="day-label">Day 4｜6月12日（周四）🏙️ 福州城市人文日</div>
+                <div class="day-item"><span class="day-time">08:00-10:00</span><span class="day-desc">平潭开车回福州（或高铁），约1.5h</span></div>
+                <div class="day-item"><span class="day-time">10:00-12:00</span><span class="day-desc"><strong>三坊七巷</strong>——中国里坊制度活化石、明清建筑群、免费</span></div>
+                <div class="day-item"><span class="day-time">12:00-13:30</span><span class="day-desc">午餐：<strong>老福州/安泰楼</strong>——佛跳墙、荔枝肉、锅边糊</span></div>
+                <div class="day-item"><span class="day-time">14:00-16:00</span><span class="day-desc"><strong>上下杭</strong>——福州版"清明上河图"，老街区+水巷</span></div>
+                <div class="day-item"><span class="day-time">16:30-18:00</span><span class="day-desc"><strong>烟台山</strong>——万国建筑群、文艺街区、俯瞰闽江</span></div>
+                <div class="day-item"><span class="day-time">18:30</span><span class="day-desc">福州夜市美食——达明美食街 | 🏨 住福州（约¥300）</span></div>
+            </div>
+
+            <div class="day-block">
+                <div class="day-label">Day 5｜6月13日（周五）返程</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">福州西湖公园/福建省博物院（免费，孩子友好）</span></div>
+                <div class="day-item"><span class="day-time">午饭后</span><span class="day-desc">福州站→武汉（高铁约6h）</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc">抵达武汉</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🦐</span> 平潭+福州 美食深度指南</div>
+            <table>
+                <tr><th>美食</th><th>详解</th><th>孩子友好度</th></tr>
+                <tr><td><strong>时来运转（咸米时）</strong></td><td>平潭第一小吃！地瓜皮包紫菜+海鲜+肉丁蒸制，外Q内鲜</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>天长地久（油羹）</strong></td><td>油炸地瓜甜品，包花生碎+糖+芝麻，外酥里甜，孩子绝对爱</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>八珍炒糕</strong></td><td>地瓜粉+鱿鱼+虾仁+花生+蔬菜，煎成焦脆大饼</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>海蛎煎</strong></td><td>平潭海蛎个头小但极鲜，加地瓜粉煎</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>金蟳糯米饭</strong></td><td>青蟹蒸糯米，蟹黄渗入米饭，奢华好吃</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>茹粉结</strong></td><td>地瓜粉+花生+海鲜煮汤，暖胃舒服</td><td>⭐⭐⭐⭐</td></tr>
+            </table>
+            <p class="mt-2"><strong>推荐餐馆：</strong>食为福、阿英海鲜楼、毛记潮汕海鲜砂锅粥（平潭分店）</p>
+            <p class="mt-2"><strong>福州必吃：</strong>佛跳墙、荔枝肉、锅边糊、鱼丸、芋泥</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">💰</span> 平潭方案费用总表</div>
+            <table>
+                <tr><th>项目</th><th>明细</th><th>费用</th></tr>
+                <tr><td>🚄 往返高铁</td><td>武汉↔福州南↔平潭</td><td>¥3,200</td></tr>
+                <tr><td>🚗 岛内租车</td><td>4天 + 油费</td><td>¥1,200</td></tr>
+                <tr><td>🏨 住宿</td><td>平潭3晚+福州1晚</td><td>¥1,850</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>5天×约¥400/天</td><td>¥2,000</td></tr>
+                <tr><td>🎫 门票</td><td>猴研岛¥38×2、仙人井¥22×2、其他免费</td><td>¥150</td></tr>
+                <tr><td>🛥️ 其他</td><td>赶海工具、停车费等</td><td>¥200</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>📦 总计</strong></td><td><strong>≈ ¥8,600</strong></td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 方案二：东山岛 ========== -->
+        <h2 class="section-title">🥈 方案二：漳州东山岛 —— 鱼骨沙洲 · 苏峰山 · 海鲜自由</h2>
+        <p class="text-muted mb-4">
+            <span class="tag tag-orange">《左耳》取景地</span> <span class="tag tag-blue">鱼骨沙洲</span> <span class="tag tag-green">海鲜便宜</span> <span class="tag tag-orange">苏峰山环岛路</span>
+        </p>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🚄</span> 交通</div>
+            <table>
+                <tr><th>段</th><th>方式</th><th>详情</th><th>耗时</th><th>费用</th></tr>
+                <tr><td>武汉→云霄站</td><td>高铁G字头</td><td>云霄是离东山最近高铁站</td><td>约7h</td><td>¥380×2+¥190=<strong>¥950</strong></td></tr>
+                <tr><td>云霄→东山岛</td><td>打车/拼车</td><td>出站即走</td><td>30min</td><td><strong>¥100</strong></td></tr>
+                <tr><td>岛内交通</td><td><strong>包车</strong></td><td>带娃建议包车（突突车）</td><td>4天</td><td>¥200/天×4=<strong>¥800</strong></td></tr>
+                <tr><td>返程</td><td>高铁</td><td>同去程</td><td></td><td><strong>¥1,050</strong></td></tr>
+                <tr class="highlight-row"><td colspan="4"><strong>交通合计</strong></td><td><strong>≈ ¥2,900</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🏨</span> 住宿（4晚）</div>
+            <table>
+                <tr><th>晚次</th><th>推荐</th><th>特点</th><th>费用/晚</th></tr>
+                <tr><td>第1-2晚</td><td>铜陵镇民宿</td><td>近南门湾、风动石、顶街</td><td>¥250</td></tr>
+                <tr><td>第3-4晚</td><td>金銮湾海景公寓</td><td>一线海景、日出阳台、两房一厅</td><td>¥350</td></tr>
+                <tr class="highlight-row"><td colspan="3"><strong>住宿合计</strong></td><td><strong>¥250×2+350×2=¥1,200</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🗺️</span> 5天4晚行程</div>
+            <div class="day-block">
+                <div class="day-label">Day 1｜抵达+南门湾黄昏</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">高铁出发，下午抵东山</span></div>
+                <div class="day-item"><span class="day-time">16:00-18:00</span><span class="day-desc"><strong>南门湾</strong>——《左耳》取景地，彩色房子+弧形海湾，东山最美人文海岸线</span></div>
+                <div class="day-item"><span class="day-time">18:00-19:00</span><span class="day-desc"><strong>顶街</strong>漫步→<strong>文公祠</strong>看日落（俯瞰南门湾全景）</span></div>
+                <div class="day-item"><span class="day-time">19:00</span><span class="day-desc">晚餐：铜陵镇海鲜排档 | 🏨 铜陵镇</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 2｜苏峰山+马銮湾</div>
+                <div class="day-item"><span class="day-time">清晨</span><span class="day-desc"><strong>金銮湾日出</strong>（镜面沙滩效果，绝美）</span></div>
+                <div class="day-item"><span class="day-time">09:00-11:30</span><span class="day-desc"><strong>苏峰山环岛路</strong>——蓝色护栏+山海公路，东山最美公路</span></div>
+                <div class="day-item"><span class="day-time">14:00-16:30</span><span class="day-desc"><strong>马銮湾海滨浴场</strong>——成熟浴场、安全水域、水上项目多</span></div>
+                <div class="day-item"><span class="day-time">17:00-18:30</span><span class="day-desc"><strong>风动石景区</strong>+关帝庙——天下第一奇石，孩子会觉得"推不倒"很神奇</span></div>
+                <div class="day-item"><span class="day-time"></span><span class="day-desc">🏨 金銮湾</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 3｜鱼骨沙洲+澳角渔村</div>
+                <div class="day-item"><span class="day-time">上午（查潮汐！）</span><span class="day-desc"><strong>鱼骨沙洲</strong>——海中沙脊如鱼骨，走在"大海中央"的体验独一无二</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>澳角村</strong>——原生态渔港，可包渔船出海钓鱼体验，约¥200/船</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc">铜陵夜市 | 🏨 金銮湾</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 4｜🏘️ 漳州古城文化日</div>
+                <div class="day-item"><span class="day-time">08:00-10:00</span><span class="day-desc">东山→云霄站→漳州站，高铁30min</span></div>
+                <div class="day-item"><span class="day-time">10:30-12:00</span><span class="day-desc"><strong>漳州古城</strong>——唐宋古城、闽南建筑、免费开放</span></div>
+                <div class="day-item"><span class="day-time">12:00-13:30</span><span class="day-desc">古城午餐：<strong>阿芬卤面</strong>、<strong>建国蚵仔煎</strong></span></div>
+                <div class="day-item"><span class="day-time">14:00-16:00</span><span class="day-desc"><strong>南山寺</strong>——闽南名刹，千年古寺</span></div>
+                <div class="day-item"><span class="day-time">16:30-18:00</span><span class="day-desc"><strong>云洞岩</strong>（或百花村）——漳州近郊，奇石洞穴</span></div>
+                <div class="day-item"><span class="day-time">晚上</span><span class="day-desc">古城夜逛——漳州文庙、香港路骑楼 | 🏨 住漳州（约¥250）</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 5｜返程</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">漳州古城再逛逛，买伴手礼（片仔癀、水仙花、漳州八宝印泥）</span></div>
+                <div class="day-item"><span class="day-time">午饭后</span><span class="day-desc">漳州站→武汉（高铁约7h）</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🦐</span> 东山岛+漳州 美食深度指南</div>
+            <table>
+                <tr><th>美食</th><th>详解</th><th>必吃理由</th></tr>
+                <tr><td><strong>东山小管</strong></td><td>小鱿鱼，白灼蘸酱油，鲜甜脆嫩，东山第一鲜</td><td>离开东山吃不到这味</td></tr>
+                <tr><td><strong>海蛎煎</strong></td><td>东山版用更多地瓜粉，外焦里嫩，蘸甜辣酱</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>紫菜饭</strong></td><td>东山紫菜+米饭炒制，孩子干饭神器</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>肖米</strong></td><td>东山版烧卖，皮薄馅鲜，一口一个</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>猫仔粥</strong></td><td>名字有趣！其实是海鲜粥，虾蟹蛤蜊+米饭，孩子友好</td><td>⭐⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>白灼虾姑</strong></td><td>皮皮虾白灼，肉质超甜</td><td>⭐⭐⭐⭐</td></tr>
+                <tr><td><strong>烧腱灵</strong></td><td>猪网油包猪肉烤制，焦香</td><td>⭐⭐⭐⭐</td></tr>
+            </table>
+            <p class="mt-2"><strong>推荐餐馆：</strong>陈记肉丸、前街老味、铜陵海鲜市场（自选+旁边加工，人均¥50吃到撑）</p>
+            <p class="mt-2"><strong>漳州古城必吃：</strong>阿芬卤面、建国蚵仔煎、四果汤、麻糍</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">💰</span> 东山岛方案费用总表</div>
+            <table>
+                <tr><th>项目</th><th>明细</th><th>费用</th></tr>
+                <tr><td>🚄 往返高铁</td><td>武汉↔云霄↔漳州</td><td>¥2,900</td></tr>
+                <tr><td>🛺 岛内包车</td><td>4天</td><td>¥800</td></tr>
+                <tr><td>🏨 住宿</td><td>东山3晚+漳州1晚</td><td>¥1,450</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>5天×约¥350/天（海鲜便宜）</td><td>¥1,750</td></tr>
+                <tr><td>🎫 门票</td><td>风动石¥45×2、鱼骨沙洲船票约¥100/人×2</td><td>¥300</td></tr>
+                <tr><td>🚤 出海体验</td><td>澳角村包船</td><td>¥200</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>📦 总计</strong></td><td><strong>≈ ¥7,400</strong></td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 方案三：双月湾 ========== -->
+        <h2 class="section-title">🥉 方案三：惠州双月湾 —— 双月奇观 · 海龟湾 · 最省心</h2>
+        <p class="text-muted mb-4">
+            <span class="tag tag-green">离武汉最近</span> <span class="tag tag-orange">海龟自然保护区</span> <span class="tag tag-blue">双月奇观</span> <span class="tag tag-green">一线海景酒店多</span>
+        </p>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🚄</span> 交通</div>
+            <table>
+                <tr><th>段</th><th>方式</th><th>详情</th><th>耗时</th><th>费用</th></tr>
+                <tr><td>武汉→惠东站</td><td>高铁G字头</td><td>惠东是离双月湾最近高铁站</td><td>约5.5h</td><td>¥350×2+¥175=<strong>¥875</strong></td></tr>
+                <tr><td>惠东→双月湾</td><td>打车</td><td>出站即走</td><td>约40min</td><td><strong>¥120</strong></td></tr>
+                <tr><td>湾区交通</td><td>打车+摩的</td><td>景点间打车即可</td><td>4天</td><td><strong>¥500</strong></td></tr>
+                <tr><td>返程</td><td>高铁</td><td>原路返回</td><td></td><td><strong>¥995</strong></td></tr>
+                <tr class="highlight-row"><td colspan="4"><strong>交通合计</strong></td><td><strong>≈ ¥2,490</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🏨</span> 住宿（4晚）</div>
+            <table>
+                <tr><th>选项</th><th>推荐</th><th>特点</th><th>费用/晚</th></tr>
+                <tr><td><strong>高配⭐</strong></td><td>檀悦豪生温泉度假酒店</td><td>五星、无边泳池、私家沙滩、温泉、亲子设施</td><td>¥750</td></tr>
+                <tr><td><strong>性价比</strong></td><td>万科双月湾海景公寓</td><td>两房一厅、一线海景、可做饭</td><td>¥400</td></tr>
+                <tr class="highlight-row"><td colspan="3"><strong>取中配</strong></td><td><strong>¥450×4=¥1,800</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🗺️</span> 5天4晚行程</div>
+            <div class="day-block">
+                <div class="day-label">Day 1｜抵达+初探</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">高铁出发，下午抵双月湾</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc">酒店沙滩初体验，孩子玩沙玩水</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc">海边散步，港口镇海鲜晚餐</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 2｜核心打卡日</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc"><strong>大星山观景台</strong>——同时俯瞰左湾+右湾，双月奇观，世界仅有两处！</span></div>
+                <div class="day-item"><span class="day-time">上午-中午</span><span class="day-desc"><strong>海龟湾</strong>——国家海龟自然保护区！看大海龟游弋，孩子会激动得尖叫，还有海边栈道</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>万科西班牙小镇</strong>拍照+沙滩 | 晚上：酒店温泉</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 3｜出海+红树林</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc"><strong>港口码头包船出海</strong>——体验渔民生活、海钓、看海上养殖，约¥300/船</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>红树林自然保护区</strong>——生态观光、白鹭栖息地</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc"><strong>情人堤</strong>看日落</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 4｜🏛️ 惠东县城+平海古城</div>
+                <div class="day-item"><span class="day-time">09:00-10:00</span><span class="day-desc">双月湾→平海镇，约20min车程</span></div>
+                <div class="day-item"><span class="day-time">10:00-12:00</span><span class="day-desc"><strong>平海古城</strong>——明代海防卫所、古城墙、七星井、城隍庙，免费</span></div>
+                <div class="day-item"><span class="day-time">12:00-13:00</span><span class="day-desc">平海午餐——平海窑鸡、海鲜</span></div>
+                <div class="day-item"><span class="day-time">14:00-16:00</span><span class="day-desc"><strong>九龙峰</strong>——惠东名山、道教圣地、古树参天</span></div>
+                <div class="day-item"><span class="day-time">16:30-18:00</span><span class="day-desc"><strong>惠东县城</strong>逛逛，感受粤东小城烟火气</span></div>
+                <div class="day-item"><span class="day-time">晚上</span><span class="day-desc">回双月湾 | 🏨 住双月湾</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 5｜返程</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">酒店最后玩玩水</span></div>
+                <div class="day-item"><span class="day-time">午饭后</span><span class="day-desc">惠东站→武汉</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🦐</span> 双月湾+惠东 美食深度指南</div>
+            <table>
+                <tr><th>美食</th><th>详解</th><th>在哪里吃</th></tr>
+                <tr><td><strong>窑鸡</strong></td><td>惠东第一美食！整鸡用锡纸包好入窑烤，汁多肉嫩</td><td>平海镇路边窑鸡档最正宗</td></tr>
+                <tr><td><strong>海鲜砂锅粥</strong></td><td>虾蟹粥，慢火熬制，鲜入骨髓</td><td>港口镇海鲜市场旁</td></tr>
+                <tr><td><strong>姜葱炒蟹</strong></td><td>本地青蟹，姜葱爆炒</td><td>各大排档</td></tr>
+                <tr><td><strong>白灼虾</strong></td><td>6月虾肥，白灼蘸酱油原味</td><td>海鲜市场自选加工</td></tr>
+                <tr><td><strong>海胆炒饭</strong></td><td>当地海胆+蛋炒饭，奢华版</td><td>港口镇餐馆</td></tr>
+                <tr><td><strong>蚝烙</strong></td><td>惠州版海蛎煎</td><td>随处可见</td></tr>
+            </table>
+            <p class="mt-2"><strong>省钱秘诀：</strong>港口镇海鲜市场自选海鲜→旁边小店加工（加工费约¥15-25/道），比直接在餐厅点便宜一半！</p>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">💰</span> 双月湾方案费用总表</div>
+            <table>
+                <tr><th>项目</th><th>明细</th><th>费用</th></tr>
+                <tr><td>🚄 往返高铁</td><td>武汉↔惠东</td><td>¥2,490</td></tr>
+                <tr><td>🚕 当地交通</td><td>打车+包车</td><td>¥500</td></tr>
+                <tr><td>🏨 住宿</td><td>海景公寓4晚</td><td>¥1,800</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>5天×¥350/天</td><td>¥1,750</td></tr>
+                <tr><td>🎫 门票</td><td>海龟湾¥30×2、观景台免费</td><td>¥60</td></tr>
+                <tr><td>🚤 出海</td><td>包船体验</td><td>¥300</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>📦 总计</strong></td><td><strong>≈ ¥6,900</strong></td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 方案四：巽寮湾+三角洲岛 ========== -->
+        <h2 class="section-title">④ 方案四：惠州巽寮湾+三角洲岛 —— 成熟度假 · 离岛探险</h2>
+        <p class="text-muted mb-4">
+            <span class="tag tag-green">度假配套最成熟</span> <span class="tag tag-blue">三角洲岛浮潜</span> <span class="tag tag-orange">磨子石公园</span> <span class="tag tag-green">水上项目丰富</span>
+        </p>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🚄</span> 交通（同双月湾方向）</div>
+            <table>
+                <tr><th>段</th><th>方式</th><th>详情</th><th>耗时</th><th>费用</th></tr>
+                <tr><td>武汉→惠东站</td><td>高铁</td><td></td><td>约5.5h</td><td><strong>¥875</strong></td></tr>
+                <tr><td>惠东→巽寮湾</td><td>打车</td><td>比双月湾更近</td><td>约25min</td><td><strong>¥80</strong></td></tr>
+                <tr><td>湾区交通</td><td>打车</td><td></td><td>4天</td><td><strong>¥400</strong></td></tr>
+                <tr><td>返程</td><td>高铁</td><td></td><td></td><td><strong>¥955</strong></td></tr>
+                <tr class="highlight-row"><td colspan="4"><strong>交通合计</strong></td><td><strong>≈ ¥2,310</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🏨</span> 住宿（4晚）</div>
+            <table>
+                <tr><th>推荐</th><th>特点</th><th>费用/晚</th></tr>
+                <tr><td>巽寮湾喜来登/海尚湾畔</td><td>五星度假、私家沙滩、亲子设施</td><td>¥700</td></tr>
+                <tr><td>巽寮湾海公园公寓</td><td>性价比高、一线海景</td><td>¥400</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>取中配</strong></td><td><strong>¥450×4=¥1,800</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🗺️</span> 5天4晚行程（含三角洲岛）</div>
+            <div class="day-block">
+                <div class="day-label">Day 1｜抵达</div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc">抵巽寮湾，沙滩初体验</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc"><strong>磨子石公园</strong>——奇石海滩+日落，巽寮湾标志景观</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 2｜🏝️ 三角洲岛全天</div>
+                <div class="day-item"><span class="day-time">08:30</span><span class="day-desc">磨子石码头乘快艇，约10-15分钟，孩子会兴奋</span></div>
+                <div class="day-item"><span class="day-time">09:00-12:00</span><span class="day-desc">岛上玩水+浮潜+拍照——三个沙滩、白色灯塔、海上秋千</span></div>
+                <div class="day-item"><span class="day-time">12:00</span><span class="day-desc">岛上简餐或回岸（岛上餐饮一般，自带零食更好）</span></div>
+                <div class="day-item"><span class="day-time">13:00-15:00</span><span class="day-desc">继续岛上探险——海蚀洞穴、礁石区</span></div>
+                <div class="day-item"><span class="day-time">15:30</span><span class="day-desc">快艇回岸</span></div>
+                <div class="day-item"><span class="day-time">16:00-18:00</span><span class="day-desc">酒店休息/沙滩 | 晚上：海鲜大餐</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 3｜水上运动+天后宫</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc"><strong>水上项目</strong>——摩托艇¥150/次、香蕉船¥80/人、帆船体验等</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>天后宫岭南民俗文化街</strong>——妈祖文化、岭南建筑、免费</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc">沙滩自由</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 4｜🏛️ 惠东文化日（同双月湾方案）</div>
+                <div class="day-item"><span class="day-time"></span><span class="day-desc">平海古城→九龙峰→惠东县城</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 5｜返程</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc">最后玩水</span></div>
+                <div class="day-item"><span class="day-time">午饭后</span><span class="day-desc">惠东站→武汉</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">💰</span> 巽寮湾方案费用总表</div>
+            <table>
+                <tr><th>项目</th><th>明细</th><th>费用</th></tr>
+                <tr><td>🚄 往返高铁</td><td>武汉↔惠东</td><td>¥2,310</td></tr>
+                <tr><td>🚕 当地交通</td><td>打车</td><td>¥400</td></tr>
+                <tr><td>🏨 住宿</td><td>海景4晚</td><td>¥1,800</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>5天×¥350/天</td><td>¥1,750</td></tr>
+                <tr><td>🎫 门票</td><td>三角洲岛¥150×2+¥75（儿童半价）</td><td>¥375</td></tr>
+                <tr><td>🏄 水上项目</td><td>可选1-2项</td><td>¥300</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>📦 总计</strong></td><td><strong>≈ ¥6,935</strong></td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 方案五：湄洲岛 ========== -->
+        <h2 class="section-title">⑤ 方案五：莆田湄洲岛 —— 妈祖圣地 · 文化海岛</h2>
+        <p class="text-muted mb-4">
+            <span class="tag tag-orange">世界妈祖信仰中心</span> <span class="tag tag-blue">黄金沙滩</span> <span class="tag tag-green">宁静纯粹</span>
+        </p>
+        <div class="reminder-box">
+            <strong>⚠️ 先说实话：</strong>湄洲岛的沙滩和海水不如前四个，亲子娱乐项目少，岛上交通不太方便。但它有独一无二的<strong>妈祖文化</strong>和<strong>宁静氛围</strong>，适合对文化有兴趣的家庭。如果孩子比较小、主要想玩沙玩水，建议选前四个。
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🚄</span> 交通</div>
+            <table>
+                <tr><th>段</th><th>方式</th><th>详情</th><th>耗时</th><th>费用</th></tr>
+                <tr><td>武汉→莆田站</td><td>高铁</td><td></td><td>约6.5h</td><td>¥370×2+¥185=<strong>¥925</strong></td></tr>
+                <tr><td>莆田→文甲码头</td><td>公交/打车</td><td></td><td>约1h</td><td><strong>¥80</strong></td></tr>
+                <tr><td>文甲→湄洲岛</td><td>轮渡</td><td>含上岛费</td><td>约15min</td><td>¥110×2+¥55=<strong>¥275</strong></td></tr>
+                <tr><td>岛上交通</td><td>租电动车/观光车</td><td></td><td>4天</td><td><strong>¥400</strong></td></tr>
+                <tr><td>返程</td><td>轮渡+高铁</td><td></td><td></td><td><strong>¥1,280</strong></td></tr>
+                <tr class="highlight-row"><td colspan="4"><strong>交通合计</strong></td><td><strong>≈ ¥2,960</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🏨</span> 住宿（4晚）</div>
+            <table>
+                <tr><th>推荐</th><th>费用/晚</th></tr>
+                <tr><td>湄洲岛民宿/海景酒店</td><td>¥300</td></tr>
+                <tr class="highlight-row"><td><strong>住宿合计</strong></td><td><strong>¥300×4=¥1,200</strong></td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🗺️</span> 5天4晚行程</div>
+            <div class="day-block">
+                <div class="day-label">Day 1｜抵达+初探</div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc">抵岛，入住</span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc"><strong>黄金沙滩</strong>——湄洲岛最好的沙滩</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 2｜妈祖文化核心</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc"><strong>妈祖祖庙</strong>——世界妈祖信仰中心、天后宫、升天古迹</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>天妃故里遗址公园</strong>+<strong>妈祖文化园</strong></span></div>
+                <div class="day-item"><span class="day-time">傍晚</span><span class="day-desc"><strong>鹅尾神石园</strong>——海蚀地貌</span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 3｜环岛探索</div>
+                <div class="day-item"><span class="day-time">上午</span><span class="day-desc"><strong>湄屿潮音</strong>——听海蚀洞潮水声响</span></div>
+                <div class="day-item"><span class="day-time">下午</span><span class="day-desc"><strong>莲池澳沙滩</strong>+<strong>妈祖平安里</strong></span></div>
+            </div>
+            <div class="day-block">
+                <div class="day-label">Day 4｜🏙️ 莆田市区文化日</div>
+                <div class="day-item"><span class="day-time"></span><span class="day-desc"><strong>广化寺</strong>——福建四大禅林之一，千年古刹，免费</span></div>
+                <div class="day-item"><span class="day-time"></span><span class="day-desc"><strong>莆田南少林寺</strong>——南拳发源地，孩子可能喜欢武术</span></div>
+                <div class="day-item"><span class="day-time"></span><span class="day-desc"><strong>兴化府历史文化街区</strong>——莆田古城风貌 | <strong>绶溪公园</strong>——城市湿地公园</span></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">🦐</span> 莆田美食</div>
+            <table>
+                <tr><th>美食</th><th>详解</th></tr>
+                <tr><td><strong>莆田卤面</strong></td><td>浓汤海鲜面，莆田第一面</td></tr>
+                <tr><td><strong>兴化米粉</strong></td><td>细如发丝，炒或汤都绝</td></tr>
+                <tr><td><strong>炝肉</strong></td><td>猪肉片滑入高汤，嫩滑鲜</td></tr>
+                <tr><td><strong>天九湾炝粉</strong></td><td>粉条+猪血+大肠，重口味但上头</td></tr>
+                <tr><td><strong>豆浆炒米粉</strong></td><td>豆浆煮米粉？独特体验</td></tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><span class="emoji">💰</span> 湄洲岛方案费用总表</div>
+            <table>
+                <tr><th>项目</th><th>明细</th><th>费用</th></tr>
+                <tr><td>🚄 往返交通</td><td>高铁+轮渡</td><td>¥2,960</td></tr>
+                <tr><td>🛵 岛上交通</td><td>租车</td><td>¥400</td></tr>
+                <tr><td>🏨 住宿</td><td>民宿4晚</td><td>¥1,200</td></tr>
+                <tr><td>🍽️ 餐饮</td><td>5天×¥300/天</td><td>¥1,500</td></tr>
+                <tr><td>🎫 门票</td><td>妈祖祖庙¥30×2等</td><td>¥150</td></tr>
+                <tr class="highlight-row"><td colspan="2"><strong>📦 总计</strong></td><td><strong>≈ ¥6,210</strong></td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- ========== 超全携带清单 ========== -->
+        <h2 class="section-title">🧳 两大一小 · 六月海滨五天四晚 · 携带清单</h2>
+
+        <!-- 泳装 & 沙滩装备 -->
+        <h3 class="section-subtitle">一、👙 泳装 & 沙滩装备</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>成人(×2)</th><th>5岁女孩</th><th>备注</th></tr>
+                <tr><td>泳衣</td><td>各2套</td><td><strong>3套</strong></td><td>孩子每天下水至少1次，湿了换着穿，一定要速干材质</td></tr>
+                <tr><td>泳裤</td><td>爸爸2条</td><td>—</td><td></td></tr>
+                <tr><td>防晒泳衣（长袖）</td><td>各1件</td><td><strong>必备1-2件</strong></td><td>孩子皮肤嫩，长袖防晒泳衣比防晒霜更管用！UPF50+</td></tr>
+                <tr><td>沙滩鞋/溯溪鞋</td><td>各1双</td><td><strong>必备1双</strong></td><td>防礁石划伤+防烫沙，迪卡侬几十块一双</td></tr>
+                <tr><td>浴巾/速干毛巾</td><td>各1条</td><td><strong>2条</strong></td><td>孩子裹一条、擦一条分开</td></tr>
+                <tr><td>手机防水袋</td><td>1-2个</td><td>—</td><td>沙滩拍照必备</td></tr>
+                <tr><td>泳圈/臂圈</td><td>—</td><td><strong>臂圈+游泳圈</strong></td><td>5岁臂圈更安全，再带个造型泳圈拍照也好看</td></tr>
+                <tr><td>沙滩垫/防潮垫</td><td>1张</td><td>—</td><td>沙滩坐着躺着用</td></tr>
+                <tr><td>浮潜面罩（平潭/三角洲）</td><td>按需</td><td>儿童款</td><td>如果去平潭或三角洲岛浮潜</td></tr>
+            </table>
+        </div>
+
+        <!-- 防晒 -->
+        <h3 class="section-subtitle">二、☀️ 防晒（六月海边重中之重！）</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th><th>重要度</th></tr>
+                <tr><td><strong>儿童防晒霜</strong></td><td>SPF50+ PA++++ 物理防晒（如Thinkbaby、Mama&Kids、安耐晒儿童蓝瓶）</td><td>🔴必带</td></tr>
+                <tr><td><strong>成人防晒霜</strong></td><td>SPF50+ PA++++ 面部+身体分开，安耐晒金瓶/理肤泉大哥大</td><td>🔴必带</td></tr>
+                <tr><td>防晒喷雾</td><td>补涂方便，但孩子用涂抹式更均匀</td><td>🟡选带</td></tr>
+                <tr><td><strong>防晒服/皮肤衣</strong></td><td>每人1件 UPF50+，轻薄透气</td><td>🔴必带</td></tr>
+                <tr><td><strong>遮阳帽</strong></td><td>每人1顶，孩子要宽檐+防风绳（海边风大吹不跑）</td><td>🔴必带</td></tr>
+                <tr><td>太阳镜</td><td>成人各1副，孩子可选（5岁可以戴儿童墨镜）</td><td>🟡选带</td></tr>
+                <tr><td><strong>晒后修复</strong></td><td>芦荟胶1支，万一晒红当晚厚涂</td><td>🔴必带</td></tr>
+                <tr><td>防晒唇膏</td><td>SPF15+，嘴唇也会晒伤</td><td>🟡选带</td></tr>
+                <tr><td><strong>儿童太阳帽</strong></td><td>脖颈也要遮住的渔夫帽款式最好</td><td>🔴必带</td></tr>
+            </table>
+        </div>
+        <div class="reminder-box">
+            <strong>⚠️ 六月的海边紫外线极强</strong>，孩子皮肤厚度只有成人1/3，晒伤一次恢复很慢。物理防晒（帽子+防晒服）比防晒霜更可靠！
+        </div>
+
+        <!-- 药品 & 护理 -->
+        <h3 class="section-subtitle">三、🩹 药品 & 护理</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th><th>重要度</th></tr>
+                <tr><td><strong>碘伏棉签</strong></td><td>独立包装，擦伤/碰伤第一时间消毒</td><td>🔴必带</td></tr>
+                <tr><td><strong>创可贴</strong></td><td>防水型+卡通图案（孩子喜欢贴）</td><td>🔴必带</td></tr>
+                <tr><td><strong>儿童退烧药</strong></td><td>布洛芬混悬液/对乙酰氨基酚</td><td>🔴必带</td></tr>
+                <tr><td><strong>电子体温计</strong></td><td>耳温枪/额温枪</td><td>🔴必带</td></tr>
+                <tr><td><strong>蒙脱石散</strong></td><td>防腹泻（吃海鲜+水土变化可能拉肚子）</td><td>🔴必带</td></tr>
+                <tr><td>口服补液盐</td><td>腹泻/中暑后补水</td><td>🟡选带</td></tr>
+                <tr><td>益生菌</td><td>调理肠胃，提前吃预防</td><td>🟡选带</td></tr>
+                <tr><td><strong>抗过敏药</strong></td><td>氯雷他定（海鲜过敏/荨麻疹备用）</td><td>🔴必带</td></tr>
+                <tr><td><strong>防蚊喷雾</strong></td><td>儿童专用（避蚊胺含量<10%），六月海边蚊子多</td><td>🔴必带</td></tr>
+                <tr><td><strong>止痒膏</strong></td><td>蚊虫叮咬后涂（如无比滴儿童版、炉甘石洗剂）</td><td>🔴必带</td></tr>
+                <tr><td><strong>晕车贴/晕车药</strong></td><td>出海坐船+高铁+山路</td><td>🔴必带</td></tr>
+                <tr><td>成人感冒药</td><td>感康/白加黑备用</td><td>🟡选带</td></tr>
+                <tr><td>藿香正气水</td><td>中暑备用</td><td>🟡选带</td></tr>
+                <tr><td>眼药水</td><td>海水进眼睛冲洗用（人工泪液更温和）</td><td>🟡选带</td></tr>
+                <tr><td>儿童口罩</td><td>高铁/人群密集处</td><td>🟡选带</td></tr>
+                <tr><td>指甲刀</td><td>沙滩玩沙指甲缝容易藏污</td><td>🟡选带</td></tr>
+            </table>
+        </div>
+
+        <!-- 卫生用品 -->
+        <h3 class="section-subtitle">四、🧴 卫生用品</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>成人</th><th>孩子</th><th>备注</th></tr>
+                <tr><td>洗发水沐浴露</td><td>旅行装</td><td>儿童专用旅行装</td><td>海水泡完必须认真洗</td></tr>
+                <tr><td>儿童牙膏牙刷</td><td>—</td><td>1套</td><td></td></tr>
+                <tr><td>成人牙具</td><td>各1</td><td>—</td><td></td></tr>
+                <tr><td>洗面奶/卸妆</td><td>妈妈带</td><td>—</td><td>防水防晒霜必须卸妆</td></tr>
+                <tr><td>护肤品小样</td><td>妈妈带</td><td>—</td><td></td></tr>
+                <tr><td>儿童面霜</td><td>—</td><td>1支</td><td>海风吹+日晒后保湿</td></tr>
+                <tr><td>湿纸巾</td><td>大包1包</td><td>小包随身</td><td>沙滩擦手擦脚</td></tr>
+                <tr><td>纸巾</td><td colspan="2">随身小包+备用</td><td></td></tr>
+                <tr><td>免洗洗手液</td><td colspan="2">1小瓶</td><td>沙滩没有水龙头</td></tr>
+                <tr><td>一次性马桶垫</td><td colspan="2">若干</td><td>高铁+酒店公用卫生间</td></tr>
+                <tr><td>女性卫生用品</td><td>妈妈按需</td><td>—</td><td>海边+下水提前做好准备</td></tr>
+                <tr><td>儿童便携马桶垫</td><td>—</td><td>1个</td><td>5岁女孩用公用卫生间更卫生</td></tr>
+                <tr><td>折叠衣架</td><td colspan="2">2-3个</td><td>酒店晾泳衣</td></tr>
+                <tr><td>洗衣液旅行装</td><td colspan="2">1小瓶</td><td>孩子衣服一天换好几套，随时搓</td></tr>
+                <tr><td>密封袋/塑料袋</td><td colspan="2">若干</td><td>装湿泳衣、湿毛巾、脏衣服</td></tr>
+                <tr><td>一次性浴缸套</td><td colspan="2">按需</td><td>酒店浴缸给孩子泡澡更卫生</td></tr>
+            </table>
+        </div>
+
+        <!-- 衣物篇 -->
+        <h3 class="section-subtitle">五、👗 衣物篇</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th></th><th>妈妈</th><th>爸爸</th><th>5岁女孩 👧</th></tr>
+                <tr><td><strong>连衣裙</strong></td><td>2-3条（棉麻透气）</td><td>—</td><td>3-4条（棉质、好穿脱）</td></tr>
+                <tr><td><strong>T恤+短裤</strong></td><td>3-4件+2条</td><td>4-5件+2-3条</td><td>3套</td></tr>
+                <tr><td><strong>睡衣</strong></td><td>1套</td><td>1套</td><td><strong>2套</strong>（出汗/尿床备用）</td></tr>
+                <tr><td><strong>内衣裤</strong></td><td>按天+1备用</td><td>按天+1</td><td><strong>5-6条</strong>（一天可能换2条）</td></tr>
+                <tr><td><strong>薄外套/开衫</strong></td><td>1件</td><td>1件</td><td>1件（小雨衣/薄外套）</td></tr>
+                <tr><td><strong>防晒服</strong></td><td>1件</td><td>1件</td><td><strong>1-2件</strong></td></tr>
+                <tr><td><strong>鞋子</strong></td><td>凉鞋+小白鞋</td><td>拖鞋+运动鞋</td><td>凉鞋/Crocs+运动鞋</td></tr>
+                <tr><td><strong>袜子</strong></td><td>按需</td><td>按需</td><td>3-4双</td></tr>
+                <tr><td><strong>帽子</strong></td><td>遮阳帽</td><td>遮阳帽</td><td>小草帽<strong>带防风绳</strong></td></tr>
+            </table>
+        </div>
+        <div class="reminder-box">
+            <strong>💡 孩子衣物黄金法则：</strong>按天数×1.5-2倍带，因为玩水、出汗、吃东西随时可能湿/脏。
+        </div>
+
+        <!-- 孩子饮食 & 零食 -->
+        <h3 class="section-subtitle">六、🍼 孩子饮食 & 零食</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th><th>重要度</th></tr>
+                <tr><td><strong>儿童水壶</strong></td><td>500ml左右，随身背</td><td>🔴必带</td></tr>
+                <tr><td><strong>零食</strong></td><td>高铁上吃：海苔、饼干、果泥吸吸包、奶酪棒、坚果（确认不过敏）</td><td>🔴必带</td></tr>
+                <tr><td>儿童餐具</td><td>便携勺+筷+小碗，餐馆筷子孩子用不了</td><td>🟡选带</td></tr>
+                <tr><td>围兜</td><td>一次性围兜，吃海鲜好用</td><td>🟡选带</td></tr>
+                <tr><td>奶粉/牛奶</td><td>如果还在喝的话</td><td>按需</td></tr>
+                <tr><td>维生素D/钙片</td><td>平常吃的继续带</td><td>按需</td></tr>
+            </table>
+        </div>
+
+        <!-- 娱乐 & 安抚 -->
+        <h3 class="section-subtitle">七、🎮 娱乐 & 安抚</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th><th>重要度</th></tr>
+                <tr><td><strong>沙滩玩具套装</strong></td><td>铲子+桶+模具，带网袋装</td><td>🔴必带</td></tr>
+                <tr><td>充气玩具</td><td>沙滩球、水枪</td><td>🟡选带</td></tr>
+                <tr><td>儿童相机</td><td>防水儿童相机，孩子自己拍着玩</td><td>🟡好玩</td></tr>
+                <tr><td><strong>绘本/贴纸书</strong></td><td>高铁上6小时消磨时间，贴纸书最管用</td><td>🔴必带</td></tr>
+                <tr><td>iPad/手机</td><td>下载好动画片，高铁备用</td><td>🟡选带</td></tr>
+                <tr><td>儿童耳机</td><td>高铁上看动画不吵别人</td><td>🟡选带</td></tr>
+                <tr><td><strong>小玩偶/安抚物</strong></td><td>孩子平常睡觉抱的那个！千万别忘</td><td>🔴必带</td></tr>
+                <tr><td>涂色本+彩笔</td><td>安静消磨时间</td><td>🟡选带</td></tr>
+                <tr><td>泡泡机</td><td>沙滩上玩泡泡超开心</td><td>🟡好玩</td></tr>
+            </table>
+        </div>
+
+        <!-- 电子 & 证件 -->
+        <h3 class="section-subtitle">八、📱 电子 & 证件</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th></tr>
+                <tr><td><strong>身份证（成人×2）</strong></td><td>高铁取票+酒店入住</td></tr>
+                <tr><td><strong>户口本/出生证明</strong></td><td>5岁孩子没有身份证，带户口本或出生证明原件！</td></tr>
+                <tr><td><strong>驾照</strong></td><td>如果租车，爸爸/妈妈都带上</td></tr>
+                <tr><td>手机+充电器</td><td></td></tr>
+                <tr><td>充电宝</td><td>高铁+沙滩一天</td></tr>
+                <tr><td>多头充电线</td><td>一条线充所有设备</td></tr>
+                <tr><td>相机</td><td>按需，手机也够</td></tr>
+                <tr><td>自拍杆/三脚架</td><td>一家三口合影不求人</td></tr>
+                <tr><td>儿童手表/GPS定位器</td><td>沙滩人多，5岁孩子戴一个防走丢</td></tr>
+            </table>
+        </div>
+
+        <!-- 收纳 & 出行 -->
+        <h3 class="section-subtitle">九、🎒 收纳 & 出行</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th></tr>
+                <tr><td><strong>行李箱</strong></td><td>24-26寸×1个装全家衣物</td></tr>
+                <tr><td><strong>随身背包</strong></td><td>爸爸背，装水+零食+证件+充电宝</td></tr>
+                <tr><td><strong>妈妈随身小包</strong></td><td>手机+钱+补妆</td></tr>
+                <tr><td><strong>沙滩包/网袋</strong></td><td>装泳衣+浴巾+沙滩玩具，网袋不藏沙</td></tr>
+                <tr><td><strong>折叠购物袋</strong></td><td>买特产/海鲜市场购物用</td></tr>
+                <tr><td><strong>儿童小背包</strong></td><td>5岁可以背自己水壶和零食，有参与感</td></tr>
+            </table>
+        </div>
+
+        <!-- 杂物 & 应急 -->
+        <h3 class="section-subtitle">十、🔧 杂物 & 应急</h3>
+        <div class="table-wrap">
+            <table>
+                <tr><th>物品</th><th>详情</th></tr>
+                <tr><td><strong>现金</strong></td><td>部分渔村/小摊只收现金，备¥500-1000</td></tr>
+                <tr><td>雨伞/折叠伞</td><td>六月偶有阵雨，防晒也防雨</td></tr>
+                <tr><td>一次性雨衣</td><td>比伞方便，尤其海边风大</td></tr>
+                <tr><td>安全别针/小针线包</td><td>衣服扣子掉了应急</td></tr>
+                <tr><td>儿童发绳/发夹</td><td>多带几个！海边风大容易丢</td></tr>
+                <tr><td>小剪刀</td><td>剪标签、剪食品包装（高铁可带小号）</td></tr>
+                <tr><td>梳子</td><td>孩子长发备一把</td></tr>
+                <tr><td>垃圾袋</td><td>沙滩上装垃圾，环保+实用</td></tr>
+            </table>
+        </div>
+
+        <!-- 极简检查清单 -->
+        <h3 class="section-subtitle">📋 极简检查清单（出门前逐项打勾）</h3>
+        <div class="card">
+            <div class="checklist-cat">👙 泳装类</div>
+            <ul class="checklist">
+                <li>孩子泳衣×3（含长袖防晒款）</li>
+                <li>成人泳衣各×2</li>
+                <li>防晒泳衣各×1</li>
+                <li>沙滩鞋每人×1</li>
+                <li>浴巾×4（孩2+成人各1）</li>
+                <li>泳圈/臂圈</li>
+            </ul>
+
+            <div class="checklist-cat">☀️ 防晒类</div>
+            <ul class="checklist">
+                <li>儿童防晒霜 SPF50+</li>
+                <li>成人防晒霜 SPF50+</li>
+                <li>防晒服每人×1</li>
+                <li>遮阳帽每人×1（孩防风绳）</li>
+                <li>芦荟胶</li>
+                <li>太阳镜</li>
+            </ul>
+
+            <div class="checklist-cat">💊 药品类</div>
+            <ul class="checklist">
+                <li>退烧药（儿童）</li>
+                <li>碘伏+创可贴</li>
+                <li>蒙脱石散</li>
+                <li>抗过敏药</li>
+                <li>防蚊+止痒</li>
+                <li>晕车贴</li>
+                <li>体温计</li>
+            </ul>
+
+            <div class="checklist-cat">👗 孩子衣物（重中之重！）</div>
+            <ul class="checklist">
+                <li>连衣裙×3-4</li>
+                <li>T恤短裤×3</li>
+                <li>睡衣×2</li>
+                <li>小内裤×6</li>
+                <li>防晒服×2</li>
+                <li>凉鞋+运动鞋</li>
+                <li>小毛巾/安抚物</li>
+            </ul>
+
+            <div class="checklist-cat">🎒 证件</div>
+            <ul class="checklist">
+                <li>成人身份证×2</li>
+                <li>孩子户口本/出生证明</li>
+                <li>驾照</li>
+            </ul>
+
+            <div class="checklist-cat">🎮 孩子娱乐</div>
+            <ul class="checklist">
+                <li>沙滩玩具（铲桶）</li>
+                <li>贴纸书/绘本</li>
+                <li>小零食+N</li>
+                <li>水壶</li>
+            </ul>
+
+            <div class="checklist-cat">📱 电子</div>
+            <ul class="checklist">
+                <li>手机+充电器</li>
+                <li>充电宝</li>
+                <li>多头充电线</li>
+            </ul>
+        </div>
+
+        <!-- 特别提醒 -->
+        <h2 class="section-title">⚠️ 六月海边带娃特别提醒</h2>
+        <div class="table-wrap">
+            <table>
+                <tr><th>注意事项</th><th>详情</th></tr>
+                <tr><td>🌊 <strong>涨潮退潮</strong></td><td>每天查潮汐表，退潮赶海最好玩，涨潮注意安全</td></tr>
+                <tr><td>⏰ <strong>最佳玩海时间</strong></td><td>上午9-11点、下午4-6点，避开正午暴晒</td></tr>
+                <tr><td>🦟 <strong>傍晚防蚊</strong></td><td>下午5点后蚊子出动，提前喷防蚊液</td></tr>
+                <tr><td>🔵 <strong>蓝眼泪（平潭）</strong></td><td>如果去平潭，关注"平潭蓝眼泪"公众号，晚上8点后去长江澳/北港村蹲守</td></tr>
+                <tr><td>🚗 <strong>孩子安全座椅</strong></td><td>如果租车自驾，提前问租车公司有没有儿童安全座椅，最好自带便携款</td></tr>
+                <tr><td>🧒 <strong>防走丢</strong></td><td>给孩子穿鲜艳颜色泳衣/防晒服，人群中好找；约定"找不到妈妈就站在原地等"</td></tr>
+                <tr><td>💧 <strong>补水</strong></td><td>海边出汗+风吹，不知不觉脱水，盯着孩子多喝水</td></tr>
+                <tr><td>🌡️ <strong>注意中暑信号</strong></td><td>脸红、烦躁、不想动、不想喝水 = 可能中暑前兆，立刻到阴凉处+补水</td></tr>
+            </table>
+        </div>
+
+        <hr>
+
+        <!-- 尾部 -->
+        <div class="card text-center" style="background:#f9fafb;">
+            <p style="font-size:1.1rem;font-weight:700;color:var(--primary);">🏖️ 祝一家三口六月海滨之旅愉快！</p>
+            <p class="text-muted mt-2">选定目的地后可进一步锁定具体高铁班次、酒店预订链接和每日精确时间表。</p>
+            <p class="text-muted">📅 推荐窗口：6月14日（周日）– 6月18日（周四） 或 6月22日（周一）– 6月26日（周五）</p>
+        </div>
+
+    </div>
+</body>
+</html>
